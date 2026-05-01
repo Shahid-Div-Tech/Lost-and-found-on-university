@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Campus Lost & Found</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="brand">
+          <a href="home page/index.html">
+            <img src="assets/logo.png" alt="Campus Lost & Found" />
+          </a>
+          <div>
+            <h1>Dashboard</h1>
+            <p>Campus Lost & Found control panel</p>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <a href="home page/index.html">Home</a>
+          <a href="filter-item/filter.html">Search</a>
+          <a href="report item/report.html">Report</a>
+          <button class="user-greeting">Hi, Shahid 👤</button>
+          <button class="logout-button">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-cards">
+        <article class="card card-primary">
+          <h2>128</h2>
+          <p>Total Reports</p>
+        </article>
+        <article class="card card-secondary">
+          <h2>74</h2>
+          <p>Open Cases</p>
+        </article>
+        <article class="card card-tertiary">
+          <h2>42</h2>
+          <p>Found Items</p>
+        </article>
+        <article class="card card-accent">
+          <h2>84</h2>
+          <p>Missing Items</p>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel panel-actions">
+          <div class="panel-header">
+            <h3>Quick Actions</h3>
+            <a href="report item/report.html" class="secondary-button">New report</a>
+          </div>
+          <div class="action-list">
+            <a href="report item/report.html"><i class="fa-solid fa-plus"></i> Report Lost Item</a>
+            <a href="report item/report.html"><i class="fa-solid fa-hand-holding-droplet"></i> Report Found Item</a>
+            <a href="filter-item/filter.html"><i class="fa-solid fa-magnifying-glass"></i> Search Reports</a>
+          </div>
+        </div>
+
+        <div class="panel panel-updates">
+          <div class="panel-header">
+            <h3>Latest Reports</h3>
+            <span class="status-pill">Updated today</span>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Status</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MacBook Pro 14"</td>
+                  <td class="status open">Lost</td>
+                  <td>Main Library</td>
+                  <td>Apr 25, 2026</td>
+                </tr>
+                <tr>
+                  <td>Campus ID Card</td>
+                  <td class="status found">Found</td>
+                  <td>Cafeteria</td>
+                  <td>Apr 24, 2026</td>
+                </tr>
+                <tr>
+                  <td>Backpack</td>
+                  <td class="status open">Lost</td>
+                  <td>Lecture Hall B</td>
+                  <td>Apr 23, 2026</td>
+                </tr>
+                <tr>
+                  <td>Wallet</td>
+                  <td class="status found">Found</td>
+                  <td>Sports Center</td>
+                  <td>Apr 22, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="dashboard-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <h2>Lost & Found</h2>
+          <p>Helping campus students recover lost items quickly and safely.</p>
+        </div>
+        <div class="footer-links">
+          <a href="home page/index.html">Home</a>
+          <a href="filter-item/filter.html">Search</a>
+          <a href="report item/report.html">Report</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Campus Lost & Found. All rights reserved.</p>
+    </footer>
+    <script src="user.js"></script>
+  </body>
+</html>

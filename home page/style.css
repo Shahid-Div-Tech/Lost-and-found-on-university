@@ -276,9 +276,11 @@ span i{
 
 .third-section .second{
     width: 100%;
-   display: flex;
-   column-gap: 30px;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-inline: 20px;
 }
 
 .second .item-data{

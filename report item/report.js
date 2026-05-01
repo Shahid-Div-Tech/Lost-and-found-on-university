@@ -2,10 +2,14 @@ let detail = document.getElementById("detail");
  let lostitem =  document.getElementById("lost");
  let founditem =  document.getElementById("found");
 
-
-
-  
-    lostitem.style.backgroundColor = "white";
+function requireLoginForReport() {
+  if (!getCurrentUser()) {
+    alert("Please login first to report an item.");
+    window.location.href = "../index.html";
+    return false;
+  }
+  return true;
+}
     // lostitem.style.fontSize = "23px";
 
     
@@ -72,8 +76,9 @@ let detail = document.getElementById("detail");
 
 
     function lost() {
+      if (!requireLoginForReport()) return;
 
-    lostitem.style.backgroundColor = "white";
+      lostitem.style.backgroundColor = "white";
        founditem.style.backgroundColor="";
     // founditem.style.fontSize = "23px";
       // lostitem.style.fontSize = "23px";
@@ -143,6 +148,7 @@ let detail = document.getElementById("detail");
 
 
     function found() {
+      if (!requireLoginForReport()) return;
 
     //      let founditem = document.getElementById("found").style.backgroundColor="white";
     // let lostitem = document.getElementById("lost").style.backgroundColor = "";
