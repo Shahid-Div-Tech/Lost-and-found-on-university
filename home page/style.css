@@ -304,6 +304,16 @@ span i{
   cursor: pointer;
 }
 
+.item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-link:hover .item-data {
+    transform: translateY(-10px);
+    box-shadow: rgba(100, 100, 111, 0.28) 0px 12px 35px 0px;
+}
 
 .item-data .item-data-text{
    padding-inline: 10px;

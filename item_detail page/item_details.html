@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="item_details.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    </head>
+    <body>
+
+        <!-- navbar -->
+          <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="../home page/index.html">
+          <img src="../assets/logo.png" alt="" /></a>
+        </div>
+
+        <div class="page-list">
+          <ul>
+            <li><a href="../home page/index.html">Home</a></li>
+            <li><a href="../report item/report.html">Report Lost</a></li>
+            <li><a href="../report item/report.html">Report Found</a></li>
+          </ul>
+
+          <button class="user-greeting">Hi, YourName 👤</button>
+        </div>
+      </div>
+    </header>
+
+        <!-- details page -->
+        <div class="container">
+            <a href="#" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to listings
+            </a>
+
+            <div class="card">
+                <!-- left side -->
+                <div class="image-box">
+                    <img
+                        src="/assets/item_details img/macbook-pro-14-m2-max.webp"
+                        alt>
+                    <span class="status">Lost</span>
+                </div>
+
+                <!-- right side -->
+                <div class="content">
+                    <span class="category">Electronics</span>
+                    <h1 class="title">MacBook Pro 14"</h1>
+                    <p class="description">
+                        Silver MacBook Pro with a blue sticker on the back.
+                        Last seen in the library study area on the second floor.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-text">
+                                <small>Location</small>
+                                <h4>Main Library, 2nd Floor</h4>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="info-text">
+                                <small>Date Reported</small>
+                                <h4>April 25, 2026</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="report-card">
+                        <h3>Reported By</h3>
+                        <div class="report-item">
+                            <i class="fa-regular fa-user"></i>
+                            <span>John Smith</span>
+                        </div>
+                        <div class="report-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>john.smith@campus.edu</span>
+                        </div>
+                    </div>
+
+                    <div class="bottom-buttons">
+                        <button class="primary-btn" id="foundBtn">
+                            I Found This Item
+                        </button>
+                        <button class="share-btn" id="shareBtn">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+     <footer>
+        <div class="footer-logo">
+            <img src="../assets/logo.png" alt="" width="100%">
+        </div>
+        <div class="footer-text">
+            <p>© 2026 Campus Lost & Found. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <script src="item_details.js"></script>
+    </body>
+</html>
