@@ -30,7 +30,7 @@ loginButton.addEventListener("click", (e) => {
 
  
   if (email === "shahid.iq1010@gmail.com" && password === "shahid1122") {
-    window.location.href = "/home page/index.html"; 
+    window.location.href = "home page/index.html"; 
   } else {
     alert("Wrong email or password ");
   }
