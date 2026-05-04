@@ -5,8 +5,10 @@
     font-family: 'Inter', sans-serif;
 }
 body{
+ 
    background-color: #eaf4f7;
    overflow-x: hidden;
+   
 }
 button {
   cursor: pointer;
@@ -356,6 +358,7 @@ span i{
 
 footer{
     margin-top: 30px;
+    margin-bottom: 0px;
     width: 100vw;
     background-color: white;
     display: flex;

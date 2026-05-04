@@ -1,16 +1,17 @@
-function showSignup(){
-  document.getElementById("loginForm").classList.add("hidden");
-  document.getElementById("signupForm").classList.remove("hidden");
+
+function openModal() {
+    document.getElementById("signupModal").style.display = "flex";
 }
 
-function showLogin(){
-  document.getElementById("signupForm").classList.add("hidden");
-  document.getElementById("loginForm").classList.remove("hidden");
+function closeModal() {
+    document.getElementById("signupModal").style.display = "none";
 }
+
 
 let emailLogin = document.querySelector("#email-login");
 let passwordLogin = document.querySelector("#password-login");
 let loginButton = document.querySelector("#login-button");
+
 
 loginButton.addEventListener("click", (e) => {
 
@@ -23,7 +24,7 @@ loginButton.addEventListener("click", (e) => {
 
   
   if (!emailPattern.test(email)) {
-    alert("Invalid Email ❌");
+    alert("Invalid Email ");
     return;
   }
 
@@ -31,7 +32,7 @@ loginButton.addEventListener("click", (e) => {
   if (email === "shahid.iq1010@gmail.com" && password === "shahid1122") {
     window.location.href = "/home page/index.html"; 
   } else {
-    alert("Wrong email or password ❌");
+    alert("Wrong email or password ");
   }
 
 });

@@ -20,7 +20,7 @@
 .third input{
     width: 60%;
     height: 40px;
-    border: 1px solid rgb(155, 154, 154);
+    border: 1px solid rgb(158, 157, 157);
     border-radius: 8px;
     padding: 10px;
 }
@@ -39,7 +39,7 @@ input::placeholder{
 .third #category{
     width: 20%;
     height: 40px;
-    border: 1px solid rgb(155, 154, 154);
+    border: 1px solid  rgb(158, 157, 157);
     border-radius: 8px;
     padding: 3px;
 }
@@ -51,7 +51,7 @@ input::placeholder{
 .third #status{
     width: 20%;
     height: 40px;
-    border: 1px solid rgb(155, 154, 154);
+    border: 1px solid  rgb(158, 157, 157);
     border-radius: 8px;
     padding: 3px;
 }

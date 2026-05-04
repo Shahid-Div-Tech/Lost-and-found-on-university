@@ -1,81 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>login</title>
-<link rel="stylesheet" href="login.css">
- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-
+    <meta charset="UTF-8">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
 
-<div class="main-container">
+<div class="container">
 
- 
-  <div class="left-side">
-    <h1>Campus Lost & Found</h1>
-    <p>
-      Lost something on campus? We help students find their
-      belongings quickly and easily.
-    </p>
-
-    <div class="features">
-      <p><i class="fa-solid fa-magnifying-glass"></i> Search lost items</p>
-      <p><i class="fa-solid fa-bullhorn"></i> Report found items</p>
-      <p>🤝 Connect with owners</p>
-    </div>
-  </div>
-
-
-  
-  <div class="container">
-
-   
-    <div id="loginForm">
-      <h2>Login</h2>
-      <p>Welcome back! Login to continue</p>
-
-      <input type="email" placeholder="Email" id="email-login">
-      <input type="password" placeholder="Password" id="password-login">
-
-      <button id="login-button">Login</button>
-
-      <p class="switch">
-        Don’t have an account? 
-        <span onclick="showSignup()">Sign Up</span>
-      </p>
+    <!-- LEFT -->
+    <div class="left">
+        <img src="./assets/logo.png" alt="" width="400px">
+        <p>A platform to help you recover lost items and return found belongings easily.</p>
     </div>
 
-   
-    <div id="signupForm" class="hidden">
-      <h2>Sign Up</h2>
-      <p>Create your account</p>
+    <!-- RIGHT -->
+    <div class="right">
+        <div class="card">
+            <input type="text" placeholder="Email or phone" id="email-login">
+            <input type="password" placeholder="Password" id="password-login">
+            <button class="login-btn" id="login-button">Log In</button>
 
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
+            <div class="link">Forgot password?</div>
 
-      <button>Sign Up</button>
+            <hr>
 
-      <p class="switch">
-        Already have an account? 
-        <span onclick="showLogin()">Login</span>
-      </p>
+            <button class="signup-btn" onclick="openModal()">Create new account</button>
+        </div>
     </div>
-
-  </div>
 
 </div>
 
-<script src="login.js"></script>
+<!-- SIGNUP MODAL -->
+<div class="modal" id="signupModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="signup-btn">Sign Up</button>
+    </div>
+</div>
+
+<script src="login.js">
+</script>
 
 </body>
 </html>
