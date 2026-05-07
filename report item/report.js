@@ -212,3 +212,6 @@ let detail = document.getElementById("detail");
 </button>
         `;
     }
+
+    
+

@@ -8,45 +8,57 @@
 <body>
 
 <div class="container">
-
-    <!-- LEFT -->
     <div class="left">
         <img src="./assets/logo.png" alt="" width="400px">
         <p>A platform to help you recover lost items and return found belongings easily.</p>
     </div>
 
-    <!-- RIGHT -->
     <div class="right">
         <div class="card">
             <input type="text" placeholder="Email or phone" id="email-login">
             <input type="password" placeholder="Password" id="password-login">
             <button class="login-btn" id="login-button">Log In</button>
 
-            <div class="link">Forgot password?</div>
-
+            <div class="link" onclick="openForgotModal()">Forgot password?</div>
             <hr>
-
             <button class="signup-btn" onclick="openModal()">Create new account</button>
         </div>
     </div>
-
 </div>
 
-<!-- SIGNUP MODAL -->
 <div class="modal" id="signupModal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h2>Sign Up</h2>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <input type="text" placeholder="First Name" id="firstName">
+        <input type="text" placeholder="Last Name" id="lastName">
+        <input type="text" placeholder="Email" id="signupEmail">
+        <input type="password" placeholder="Password" id="signupPassword">
+        <input type="number" placeholder="Phone Number" id="phoneNumber">
         <button class="signup-btn">Sign Up</button>
     </div>
 </div>
 
-<script src="login.js">
-</script>
+<div class="modal" id="forgotModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForgotModal()">&times;</span>
+        <h2>Forgot Password</h2>
+        <p style="font-size: 13px; margin-bottom: 10px; color: #666;">Enter your registered email to receive OTP.</p>
+        <input type="text" placeholder="Enter Email" id="forgot-email-input">
+        <button class="login-btn" id="forgot-password-submit">Send OTP</button>
+    </div>
+</div>
 
+<div class="modal" id="resetModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeResetModal()">&times;</span>
+        <h2>Reset Password</h2>
+        <input type="text" placeholder="Enter 6-Digit OTP" id="reset-otp-input">
+        <input type="password" placeholder="Enter New Password" id="new-password-input">
+        <button class="signup-btn" id="reset-password-submit">Update Password</button>
+    </div>
+</div>
+
+<script src="login.js"></script>
 </body>
 </html>
